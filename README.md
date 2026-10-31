@@ -2,7 +2,7 @@
 
 Site institucional da **ValDev**: desenvolvimento de sites, sistemas, programas e consultoria em tecnologia sob medida para o seu negócio.
 
-🌐 **Site:** https://valdev-tech.github.io/valdev/
+🌐 **Site:** https://valdev-tech.github.io/
 
 ## Estrutura
 
