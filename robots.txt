@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://valdev-tech.github.io/valdev/sitemap.xml

@@ -791,3 +791,21 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- Aviso de privacidade no formulário ---------- */
+.form-privacy { margin: 0.9rem 0 0; font-size: 0.82rem; color: var(--text-muted); text-align: center; }
+.form-privacy i { margin-right: 0.3rem; color: var(--success); }
+.form-privacy a { text-decoration: underline; text-underline-offset: 2px; }
+.copyright a { color: #cbd5e1; text-decoration: underline; text-underline-offset: 2px; }
+.copyright a:hover { color: #fff; }
+
+/* ---------- Página de Política de Privacidade ---------- */
+.legal { padding-top: 56px; }
+.legal h1 { font-size: clamp(2rem, 4vw, 2.6rem); font-weight: 800; letter-spacing: -0.02em; }
+.legal h2 { font-size: 1.25rem; margin-top: 2.2rem; }
+.legal p, .legal li { color: var(--text-muted); }
+.legal strong { color: var(--text); }
+.legal .check-list { margin-bottom: 1rem; font-size: 1rem; }
+.legal-updated { font-size: 0.9rem; }
+.legal-back { margin-top: 2.5rem; }
+.legal .header-inner .btn { font-size: 0.85rem; }

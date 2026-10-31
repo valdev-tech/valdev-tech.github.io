@@ -13,6 +13,8 @@ Site institucional da **ValDev**: desenvolvimento de sites, sistemas, programas 
 | `script.js` | Menu mobile, tema, animações, FAQ e envio do formulário (Formspree) |
 | `favicon.svg` | Logo/ícone da ValDev |
 | `og-image.png` | Imagem de prévia ao compartilhar o link (1200×630) |
+| `privacidade.html` | Política de Privacidade (LGPD) |
+| `sitemap.xml` / `robots.txt` | Mapa do site para o Google (Search Console) |
 
 Site estático, sem etapa de build. Para testar localmente, basta abrir o `index.html` no navegador
 ou rodar um servidor simples:
