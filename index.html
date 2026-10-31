@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ValDev | Soluções em Tecnologia</title>
+  <meta name="description" content="ValDev — desenvolvimento de sites, sistemas, programas e consultoria em tecnologia sob medida para o seu negócio.">
+  <meta name="keywords" content="ValDev, desenvolvimento de sites, sistemas sob medida, programas, automação, consultoria em tecnologia">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Prévia ao compartilhar o link (WhatsApp, LinkedIn, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ValDev | Soluções em Tecnologia">
+  <meta property="og:description" content="Sites, sistemas, programas e consultoria sob medida para o seu negócio.">
+  <meta property="og:url" content="https://valdev-tech.github.io/">
+  <meta property="og:locale" content="pt_BR">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Aplica o tema salvo antes de pintar a página (evita "piscar") -->
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('valdev-theme'); } catch (e) {}
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Cabeçalho -->
+  <header class="header" id="topo">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="ValDev — página inicial">
+        <img src="favicon.svg" alt="" width="34" height="34">
+        <span>Val<strong>Dev</strong></span>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#processo">Como trabalhamos</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#duvidas">Dúvidas</a></li>
+          <li class="nav-cta-mobile"><a href="#contato" class="btn btn-primary">Solicitar orçamento</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Alternar tema claro/escuro">
+          <i class="fa-solid fa-moon" aria-hidden="true"></i>
+        </button>
+        <a href="#contato" class="btn btn-primary btn-sm header-cta">Orçamento</a>
+        <button id="menu-toggle" class="icon-btn menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-list">
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Início -->
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <span class="eyebrow"><i class="fa-solid fa-bolt" aria-hidden="true"></i> Soluções em tecnologia</span>
+          <h1>Tecnologia que faz o <span class="gradient-text">seu negócio crescer</span></h1>
+          <p class="lead">
+            Criamos sites, sistemas e programas sob medida e ajudamos você a escolher
+            as melhores ferramentas para o seu negócio.
+          </p>
+          <div class="hero-buttons">
+            <a href="#contato" class="btn btn-primary btn-lg">Solicitar orçamento <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="https://wa.me/5581992938376?text=Ol%C3%A1%2C%20ValDev!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os." class="btn btn-outline btn-lg" target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Falar no WhatsApp
+            </a>
+          </div>
+          <ul class="hero-points">
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Atendimento direto e sem complicação</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Projetos sob medida</li>
+            <li><i class="fa-solid fa-check" aria-hidden="true"></i> Suporte após a entrega</li>
+          </ul>
+        </div>
+
+        <!-- Ilustração: janela de navegador com painel -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="mock-window">
+            <div class="mock-bar"><span></span><span></span><span></span><div class="mock-url">seunegocio.com.br</div></div>
+            <div class="mock-body">
+              <div class="mock-side">
+                <i class="fa-solid fa-house"></i><i class="fa-solid fa-chart-simple"></i><i class="fa-solid fa-box"></i><i class="fa-solid fa-calendar"></i>
+              </div>
+              <div class="mock-main">
+                <div class="mock-cards">
+                  <div class="mock-card"><small>Vendas hoje</small><b>R$ 4.280</b></div>
+                  <div class="mock-card"><small>Agendamentos</small><b>18</b></div>
+                </div>
+                <div class="mock-chart">
+                  <span style="--h:40%"></span><span style="--h:65%"></span><span style="--h:50%"></span><span style="--h:80%"></span><span style="--h:60%"></span><span style="--h:95%"></span><span style="--h:75%"></span>
+                </div>
+                <div class="mock-lines"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-badge badge-1"><i class="fa-solid fa-mobile-screen"></i> Funciona no celular</div>
+          <div class="floating-badge badge-2"><i class="fa-solid fa-shield-halved"></i> Seguro e confiável</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Serviços</span>
+          <h2>O que a ValDev faz por você</h2>
+          <p>Do primeiro site ao sistema completo da sua empresa: soluções pensadas para a sua realidade.</p>
+        </header>
+
+        <div class="grid grid-4">
+          <article class="card service reveal">
+            <div class="card-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+            <h3>Desenvolvimento de Sites</h3>
+            <p>Sites modernos, rápidos e que funcionam bem no celular, para seu negócio ser encontrado no Google e passar confiança.</p>
+            <ul class="check-list">
+              <li>Sites institucionais</li>
+              <li>Lojas virtuais e catálogos</li>
+              <li>Páginas de divulgação</li>
+            </ul>
+          </article>
+
+          <article class="card service reveal">
+            <div class="card-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+            <h3>Sistemas sob Medida</h3>
+            <p>Sistemas web para organizar a rotina: cadastros, estoque, vendas, agendamentos e relatórios em um só lugar.</p>
+            <ul class="check-list">
+              <li>Controle de estoque e vendas</li>
+              <li>Agendamento on-line</li>
+              <li>Gestão de alunos e clientes</li>
+            </ul>
+          </article>
+
+          <article class="card service reveal">
+            <div class="card-icon"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+            <h3>Programas e Automações</h3>
+            <p>Programas que eliminam tarefas repetitivas e conectam as ferramentas que você já usa, economizando tempo.</p>
+            <ul class="check-list">
+              <li>Automação de tarefas</li>
+              <li>Integrações entre sistemas</li>
+              <li>Planilhas e relatórios automáticos</li>
+            </ul>
+          </article>
+
+          <article class="card service reveal">
+            <div class="card-icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div>
+            <h3>Consultoria em Tecnologia</h3>
+            <p>Orientação para escolher as ferramentas certas, investir melhor e digitalizar o seu negócio passo a passo.</p>
+            <ul class="check-list">
+              <li>Diagnóstico do seu negócio</li>
+              <li>Escolha de sistemas e ferramentas</li>
+              <li>Presença digital e redes</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Soluções personalizadas -->
+    <section class="section section-alt" id="solucoes">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Soluções personalizadas</span>
+          <h2>Cada negócio é único. A solução também.</h2>
+          <p>Seja qual for o seu segmento, adaptamos cada projeto à sua rotina, ao seu público e ao seu orçamento.</p>
+        </header>
+
+        <div class="grid grid-4">
+          <article class="card segment reveal">
+            <div class="segment-icon s-1"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></div>
+            <h3>Presença on-line</h3>
+            <ul class="check-list">
+              <li>Site profissional com a cara da sua marca</li>
+              <li>Seu negócio encontrado no Google</li>
+              <li>Informações, contatos e localização</li>
+            </ul>
+          </article>
+
+          <article class="card segment reveal">
+            <div class="segment-icon s-2"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i></div>
+            <h3>Vendas e pedidos</h3>
+            <ul class="check-list">
+              <li>Catálogo on-line de produtos ou serviços</li>
+              <li>Loja virtual completa</li>
+              <li>Pedidos integrados ao WhatsApp</li>
+            </ul>
+          </article>
+
+          <article class="card segment reveal">
+            <div class="segment-icon s-3"><i class="fa-solid fa-calendar-check" aria-hidden="true"></i></div>
+            <h3>Atendimento e agendamento</h3>
+            <ul class="check-list">
+              <li>Agendamento on-line 24 horas</li>
+              <li>Cadastro e histórico de clientes</li>
+              <li>Lembretes e comunicação automática</li>
+            </ul>
+          </article>
+
+          <article class="card segment reveal">
+            <div class="segment-icon s-4"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></div>
+            <h3>Gestão e controle</h3>
+            <ul class="check-list">
+              <li>Controle de estoque, caixa e financeiro</li>
+              <li>Cadastros e processos organizados</li>
+              <li>Relatórios para decidir melhor</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="segment-more reveal">
+          <i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i>
+          Precisa de algo diferente? Criamos a solução a partir da sua necessidade.
+          <a href="#contato">Conte para a gente o que você precisa</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- Como trabalhamos -->
+    <section class="section" id="processo">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Como trabalhamos</span>
+          <h2>Simples do início ao fim</h2>
+          <p>Você acompanha cada etapa e não precisa entender de tecnologia.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">1</span>
+            <h3>Conversa</h3>
+            <p>Entendemos o seu negócio, seus desafios e o que você quer alcançar.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">2</span>
+            <h3>Proposta</h3>
+            <p>Apresentamos a solução ideal, com prazo e valor claros, sem surpresas.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">3</span>
+            <h3>Desenvolvimento</h3>
+            <p>Construímos em etapas e mostramos o andamento para você opinar.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-num">4</span>
+            <h3>Entrega e suporte</h3>
+            <p>Colocamos no ar, ensinamos a usar e continuamos ao seu lado.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="section section-alt" id="diferenciais">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow">Diferenciais</span>
+          <h2>Por que escolher a ValDev</h2>
+        </header>
+
+        <div class="grid grid-3">
+          <div class="feature reveal">
+            <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+            <div><h3>Atendimento próximo</h3><p>Fale direto com quem desenvolve, sem intermediários.</p></div>
+          </div>
+          <div class="feature reveal">
+            <i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>
+            <div><h3>Feito sob medida</h3><p>Nada de solução genérica: tudo pensado para a sua rotina.</p></div>
+          </div>
+          <div class="feature reveal">
+            <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i>
+            <div><h3>Funciona em qualquer tela</h3><p>No computador, no tablet ou no celular.</p></div>
+          </div>
+          <div class="feature reveal">
+            <i class="fa-solid fa-lock" aria-hidden="true"></i>
+            <div><h3>Seguro e confiável</h3><p>Boas práticas de segurança para proteger seus dados e os dos seus clientes.</p></div>
+          </div>
+          <div class="feature reveal">
+            <i class="fa-solid fa-comments-dollar" aria-hidden="true"></i>
+            <div><h3>Preço justo</h3><p>Propostas que cabem no orçamento de pequenos e médios negócios.</p></div>
+          </div>
+          <div class="feature reveal">
+            <i class="fa-solid fa-headset" aria-hidden="true"></i>
+            <div><h3>Suporte contínuo</h3><p>Ajustes, melhorias e ajuda sempre que você precisar.</p></div>
+          </div>
+        </div>
+
+        <div class="tech reveal">
+          <p>Tecnologias modernas que usamos</p>
+          <ul class="tech-list">
+            <li><i class="fa-brands fa-java" aria-hidden="true"></i> Java</li>
+            <li><i class="fa-solid fa-leaf" aria-hidden="true"></i> Spring Boot</li>
+            <li><i class="fa-brands fa-python" aria-hidden="true"></i> Python</li>
+            <li><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</li>
+            <li><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML e CSS</li>
+            <li><i class="fa-solid fa-database" aria-hidden="true"></i> PostgreSQL</li>
+            <li><i class="fa-brands fa-aws" aria-hidden="true"></i> AWS</li>
+            <li><i class="fa-brands fa-git-alt" aria-hidden="true"></i> Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dúvidas -->
+    <section class="section" id="duvidas">
+      <div class="container container-narrow">
+        <header class="section-head reveal">
+          <span class="eyebrow">Dúvidas frequentes</span>
+          <h2>Perguntas que sempre recebemos</h2>
+        </header>
+
+        <div class="faq reveal">
+          <details>
+            <summary>Quanto custa um site ou sistema?</summary>
+            <p>Depende do tamanho e das funcionalidades do projeto. Depois de uma conversa rápida, enviamos uma proposta com valor fechado e sem compromisso.</p>
+          </details>
+          <details>
+            <summary>Quanto tempo leva para ficar pronto?</summary>
+            <p>Um site simples pode ficar pronto em poucas semanas; sistemas maiores são entregues em etapas, para você já começar a usar o quanto antes. O prazo é definido na proposta.</p>
+          </details>
+          <details>
+            <summary>Preciso entender de tecnologia?</summary>
+            <p>Não. Explicamos tudo de forma simples, cuidamos da parte técnica e ensinamos você e sua equipe a usar a solução.</p>
+          </details>
+          <details>
+            <summary>Vocês dão suporte depois da entrega?</summary>
+            <p>Sim. Continuamos disponíveis para tirar dúvidas, fazer ajustes e evoluir o projeto conforme o seu negócio cresce.</p>
+          </details>
+          <details>
+            <summary>Atendem negócios de qualquer cidade?</summary>
+            <p>Sim. Trabalhamos de forma remota, com reuniões por vídeo e contato pelo WhatsApp, atendendo clientes de qualquer lugar do Brasil.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section section-contact" id="contato">
+      <div class="container contact-inner">
+        <div class="contact-info reveal">
+          <span class="eyebrow eyebrow-light">Contato</span>
+          <h2>Vamos tirar sua ideia do papel?</h2>
+          <p>Conte um pouco sobre o seu negócio e o que você precisa. Respondemos o mais rápido possível — o orçamento é gratuito e sem compromisso.</p>
+
+          <ul class="contact-list">
+            <li>
+              <a href="https://wa.me/5581992938376?text=Ol%C3%A1%2C%20ValDev!%20Gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                <span><small>WhatsApp</small>(81) 99293-8376</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:cleitonkeliton.s@gmail.com?subject=Contato%20via%20site%20ValDev">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                <span><small>E-mail</small>cleitonkeliton.s@gmail.com</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="contact-form reveal" action="https://formspree.io/f/movdywgb" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Novo contato pelo site ValDev">
+
+          <div class="form-row">
+            <div class="field">
+              <label for="nome">Nome *</label>
+              <input type="text" id="nome" name="nome" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="telefone">WhatsApp / Telefone</label>
+              <input type="tel" id="telefone" name="telefone" autocomplete="tel" placeholder="(00) 00000-0000">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="negocio">Seu negócio</label>
+              <input type="text" id="negocio" name="negocio" placeholder="Ex.: loja, clínica, escola…">
+            </div>
+            <div class="field">
+              <label for="servico">Serviço de interesse</label>
+              <select id="servico" name="servico">
+                <option value="">Selecione…</option>
+                <option>Site</option>
+                <option>Sistema</option>
+                <option>Programa / Automação</option>
+                <option>Consultoria</option>
+                <option>Ainda não sei</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="mensagem">Mensagem *</label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte o que você precisa…" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-block">
+            Enviar mensagem <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+          </button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#inicio" class="logo">
+          <img src="favicon.svg" alt="" width="30" height="30">
+          <span>Val<strong>Dev</strong></span>
+        </a>
+        <p>Soluções em tecnologia para fazer o seu negócio crescer.</p>
+      </div>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="#servicos">Serviços</a>
+        <a href="#solucoes">Soluções</a>
+        <a href="#processo">Como trabalhamos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://wa.me/5581992938376" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="mailto:cleitonkeliton.s@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+        <a href="https://github.com/valdev-tech" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <p class="copyright">© <span id="ano">2026</span> ValDev — Soluções em Tecnologia. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão flutuante de WhatsApp -->
+  <a href="https://wa.me/5581992938376?text=Ol%C3%A1%2C%20ValDev!%20Vim%20pelo%20site." class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Conversar no WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
