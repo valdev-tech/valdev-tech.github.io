@@ -11,7 +11,7 @@ Site institucional da **ValDev**: desenvolvimento de sites, sistemas, programas 
 | `index.html` | Página única: Início, Serviços, Soluções, Como trabalhamos, Diferenciais, Dúvidas e Contato |
 | `style.css` | Estilos, tema claro/escuro e responsividade |
 | `script.js` | Menu mobile, tema, animações, FAQ e envio do formulário (Formspree) |
-| `favicon.svg` | Logo/ícone da ValDev |
+| `favicon.svg` / `apple-touch-icon.png` | Ícone da marca (símbolo V/) |
 | `og-image.png` | Imagem de prévia ao compartilhar o link (1200×630) |
 | `privacidade.html` | Política de Privacidade (LGPD) |
 | `404.html` | Página de "não encontrado" personalizada |
