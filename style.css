@@ -969,3 +969,6 @@ body.menu-open { overflow: hidden; }
 .not-found h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); }
 .not-found p { color: var(--text-muted); max-width: 480px; margin-left: auto; margin-right: auto; }
 .not-found-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem; margin-top: 1.8rem; }
+
+/* Aproxima o ponto final do "ê" nos títulos (ajuste de espaçamento da fonte) */
+.kern-dot { margin-left: -0.06em; }
